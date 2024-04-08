@@ -151,7 +151,7 @@ k = 448 - 1 - len(message)
 
 */
 
-// this function will pad any remaining input and run it through sha256_transform(), then write the digest to hash[]
+// this function will pad any remaining input and run it through sha256_transform(), then write the digest to digest[]
 void sha256_final(SHA256_CTX *ctx, BYTE digest[]) {
 
     WORD i = ctx->datalen;
